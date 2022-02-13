@@ -8,10 +8,12 @@
   --primary-background-color-theme-dark: #2f303a;
   --secondary-background-color-theme-light: #f5f4fa;
   --logo-main-color: #2196f3;
+  --header-border-color: #ececec;
   --header-logo-secondary-color: #212121;
   --btn-shadow-color: rgba(0, 0, 0, 0.15);
   --card-shadow-primary-color: rgba(0, 0, 0, 0.12);
   --card-shadow-secondary-color: rgba(0, 0, 0, 0.2);
+  --portfolio-card-border-color: #eeeeee;
   --accent-color: #2196f3;
   --card-set-gap: 30px;
 }
@@ -38,6 +40,8 @@ ol {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 address {
   font-style: normal;
@@ -73,6 +77,9 @@ address {
 /* END COMPONENTS */
 
 /* ========= START HEADER =========*/
+.header {
+  border-bottom: 1px solid var(--header-border-color);
+}
 .header-container {
   display: flex;
   align-items: center;
@@ -290,8 +297,27 @@ address {
   color: var(--secondary-text-color-theme-light);
 }
 /* ========= END FOOTER =========*/
-/* ========= START PORTFOLIO MAIN =========*/
+
+/* ========= START PORTFOLIO FILTER =========*/
+.filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 34px;
+}
+.filter-item:not(:last-child) {
+  margin-right: 8px;
+}
+.main-option {
+  min-width: 73px;
+}
+.secondary-option {
+  min-width: 128px;
+}
+
 .filter-item-btn {
+  padding: 4px 20px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -300,13 +326,34 @@ address {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color-theme-dark);
   background-color: var(--secondary-background-color-theme-light);
+  border-radius: 4px;
 }
 .filter-item-btn:active {
   color: var(--primary-text-color-theme-light);
   background-color: var(--accent-color);
   cursor: pointer;
 }
-.samples-list-title {
+/* END PORTFOLIO FILTER */
+
+/* START PORTFOLIO SAMPLES */
+.samples-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--card-set-gap));
+  margin-bottom: calc(-1 * var(--card-set-gap));
+}
+.samples-list-item {
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-bottom: var(--card-set-gap);
+  border: 1px solid var(--portfolio-card-border-color);
+}
+
+.portfolio-card-info {
+  padding: 20px 24px;
+}
+. .samples-list-title {
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -314,10 +361,11 @@ address {
   color: var(--secondary-text-color-theme-dark);
 }
 .samples-list-description {
+  margin-bottom: 20px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--primary-text-color-theme-dark);
 }
-/* ========= END PORTFOLIO MAIN =========*/
+/* ========= END PORTFOLIO SAMPLES =========*/

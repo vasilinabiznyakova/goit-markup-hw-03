@@ -22,57 +22,60 @@
   </head>
   <body>
     <header class="header">
-      <a class="logo link" href="" lang="en"
-        ><span class="header-logo-main">Web</span
-        ><span class="header-logo-secondary">Studio</span></a
-      >
-      <nav class="navigation">
-        <ul class="nav-list list">
-          <li class="nav-list-item">
-            <a class="nav-list-link header-text link" href="./index.html">Студия</a>
+      <div class="container header-container">
+        <a class="logo link" href="" lang="en"
+          ><span class="header-logo-main">Web</span
+          ><span class="header-logo-secondary">Studio</span></a
+        >
+        <nav class="navigation">
+          <ul class="nav-list list">
+            <li class="nav-list-item">
+              <a class="nav-list-link current header-text link" href="./index.html">Студия</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-list-link header-text link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-list-link header-text link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contacts-list list">
+          <li class="contacts-list-item">
+            <a class="contacts-list-info header-text link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
           </li>
-          <li class="nav-list-item">
-            <a class="nav-list-link current header-text link" href="./portfolio.html">Портфолио</a>
-          </li>
-          <li class="nav-list-item">
-            <a class="nav-list-link header-text link" href="">Контакты</a>
+          <li class="contacts-list-item">
+            <a class="contacts-list-info header-text link" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
-      </nav>
-      <ul class="contacts-list list">
-        <li class="contacts-list-item">
-          <a class="contacts-list-info header-text link" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li class="contacts-list-item">
-          <a class="contacts-list-info header-text link" href="tel:+380961111111"
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
       <!-- Samples of work-->
-      <section class="portfolio">
+      <section class="portfolio section">
+        <div class="container">
         <!-- нужно скрыть заголовок в css -->
         <h1 hidden>Portfolio</h1>
 
         <ul class="filter list">
           <li class="filter-item">
-            <button class="filter-item-btn" type="button">Все</button>
+            <button class="filter-item-btn main-option" type="button">Все</button>
           </li>
           <li class="filter-item">
-            <button class="filter-item-btn" type="button">Веб-сайты</button>
+            <button class="filter-item-btn secondary-option" type="button">Веб-сайты</button>
           </li>
           <li class="filter-item">
-            <button class="filter-item-btn" type="button">Приложения</button>
+            <button class="filter-item-btn secondary-option" type="button">Приложения</button>
           </li>
           <li class="filter-item">
-            <button class="filter-item-btn" type="button">Дизайн</button>
+            <button class="filter-item-btn secondary-option" type="button">Дизайн</button>
           </li>
           <li class="filter-item">
-            <button class="filter-item-btn" type="button">Маркетинг</button>
+            <button class="filter-item-btn secondary-option" type="button">Маркетинг</button>
           </li>
         </ul>
 
@@ -83,11 +86,13 @@
                 class="samples-list-img"
                 src="./images/work-sample1.jpg"
                 alt="скрин вебсайта"
-                width="404"
-                height="370"
+                width="370"
+                height="294"
               />
+              <div class="portfolio-card-info">
               <h2 class="samples-list-title">Технокряк</h2>
               <p class="samples-list-description">Веб-сайт</p>
+              </div>
             </a>
           </li>
           <li class="samples-list-item">
@@ -96,11 +101,13 @@
                 class="samples-list-img"
                 src="./images/work-sample2.jpg"
                 alt="пример постера"
-                width="404"
-                height="370"
+                width="370"
+                height="294"
               />
+              <div class="portfolio-card-info">
               <h2 class="samples-list-title">Постер New Orlean vs Golden Star</h2>
               <p class="samples-list-description">Дизайн</p>
+              </div>
             </a>
           </li>
           <li class="samples-list-item">
@@ -109,11 +116,13 @@
                 class="samples-list-img"
                 src="./images/work-sample3.jpg"
                 alt="пример ресторанного приложения"
-                width="404"
-                height="370"
+                width="370"
+                height="294"
               />
+               <div class="portfolio-card-info">
               <h2 class="samples-list-title">Ресторан Seafood</h2>
               <p class="samples-list-description">Приложение</p>
+              </div>
             </a>
           </li>
           <li class="samples-list-item">
@@ -122,11 +131,13 @@
                 class="samples-list-img"
                 src="./images/work-sample4.jpg"
                 alt="пример проекта"
-                width="404"
-                height="370"
+                width="370"
+                height="294"
               />
+              <div class="portfolio-card-info">
               <h2 class="samples-list-title">Проект Prime</h2>
               <p class="samples-list-description">Маркетинг</p>
+              </div>
             </a>
           </li>
           <li class="samples-list-item">
@@ -135,11 +146,13 @@
                 class="samples-list-img"
                 src="./images/work-sample5.jpg"
                 alt="пример приложения"
-                width="404"
-                height="370"
+                width="370"
+                height="294"
               />
+              <div class="portfolio-card-info">
               <h2 class="samples-list-title">Проект Boxes</h2>
               <p class="samples-list-description">Приложение</p>
+              </div>
             </a>
           </li>
           <li class="samples-list-item">
@@ -148,11 +161,13 @@
                 class="samples-list-img"
                 src="./images/work-sample6.jpg"
                 alt="пример вебсайта"
-                width="404"
-                height="370"
+               width="370"
+                height="294"
               />
+               <div class="portfolio-card-info">
               <h2 class="samples-list-title">Inspiration has no Borders</h2>
               <p class="samples-list-description">Веб-сайт</p>
+              </div>
             </a>
           </li>
           <li class="samples-list-item">
@@ -161,11 +176,13 @@
                 class="samples-list-img"
                 src="./images/work-sample7.jpg"
                 alt="пример дизайна издания"
-                width="404"
-                height="370"
+                width="370"
+                height="294"
               />
+              <div class="portfolio-card-info">
               <h2 class="samples-list-title">Издание Limited Edition</h2>
               <p class="samples-list-description">Дизайн</p>
+              </div>
             </a>
           </li>
           <li class="samples-list-item">
@@ -174,11 +191,13 @@
                 class="samples-list-img"
                 src="./images/work-sample8.jpg"
                 alt="пример шаблона"
-                width="404"
-                height="370"
+               width="370"
+                height="294"
               />
+               <div class="portfolio-card-info">
               <h2 class="samples-list-title">Проект LAB</h2>
               <p class="samples-list-description">Маркетинг</p>
+              </div>
             </a>
           </li>
           <li class="samples-list-item">
@@ -187,44 +206,50 @@
                 class="samples-list-img"
                 src="./images/work-sample9.jpg"
                 alt=" пример приложения"
-                width="404"
-                height="370"
+                width="370"
+                height="294"
               />
+              <div class="portfolio-card-info">
               <h2 class="samples-list-title">Growing Business</h2>
               <p class="samples-list-description">Приложение</p>
+              </div>
             </a>
           </li>
         </ul>
       </section>
+      </div>
     </main>
+
     <footer class="footer">
-      <a class="logo link" href="" lang="en"
-        ><span class="footer-logo-main">Web</span
-        ><span class="footer-logo-secondary">Studio</span></a
-      >
-      <address>
-        <ul class="address-list list">
-          <li class="address-list-item">
-            <a
-              class="address-list-text address-list-residence link"
-              href="https://goo.gl/maps/z7eLqG4QKiJEJie86"
-              target="_blank"
-              rel="noopener noreferrer"
-              >г. Киев, пр-т Леси Украинки, 26</a
-            >
-          </li>
-          <li class="address-list-item">
-            <a class="address-list-text address-list-contacts link" href="mailto:info@example.com"
-              >info@example.com</a
-            >
-          </li>
-          <li class="address-list-item">
-            <a class="address-list-text address-list-contacts link" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </address>
+      <div class="container">
+        <a class="logo link" href="" lang="en"
+          ><span class="footer-logo-main">Web</span
+          ><span class="footer-logo-secondary">Studio</span></a
+        >
+        <address>
+          <ul class="address-list list">
+            <li class="address-list-item">
+              <a
+                class="address-list-text address-list-residence link"
+                href="https://goo.gl/maps/z7eLqG4QKiJEJie86"
+                target="_blank"
+                rel="noopener noreferrer"
+                >г. Киев, пр-т Леси Украинки, 26</a
+              >
+            </li>
+            <li class="address-list-item">
+              <a class="address-list-text address-list-contacts link" href="mailto:info@example.com"
+                >info@example.com</a
+              >
+            </li>
+            <li class="address-list-item">
+              <a class="address-list-text address-list-contacts link" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
