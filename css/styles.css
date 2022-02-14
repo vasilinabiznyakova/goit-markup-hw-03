@@ -99,38 +99,35 @@ address {
   margin-right: 50px;
 }
 
-.logo {
+.header-logo {
   margin-right: 92px;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  color: var(--logo-main-color);
 }
 .nav-list-link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+
+  color: var(--secondary-text-color-theme-dark);
 }
 .nav-list-item:not(:last-child) {
   margin-right: 50px;
 }
-.header-logo-main {
-  color: var(--logo-main-color);
-}
 .header-logo-secondary {
   color: var(--secondary-text-color-theme-dark);
 }
-
 .header-text {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.nav-list-link {
-  color: var(--secondary-text-color-theme-dark);
-}
+
 .nav-list-link:hover,
 .nav-list-link:focus {
   color: var(--accent-color);
@@ -139,6 +136,9 @@ address {
   color: var(--accent-color);
 }
 .contacts-list-info {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--primary-text-color-theme-dark);
 }
 .contacts-list-info:hover,
@@ -154,7 +154,7 @@ address {
   text-align: center;
 }
 .main-title {
-  max-width: 700px;
+  max-width: 696px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
@@ -170,6 +170,9 @@ address {
   display: inline-block;
   min-width: 200px;
   padding: 6px 30px;
+  border: none;
+  cursor: pointer;
+
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -217,6 +220,9 @@ address {
 .jobs-list {
   display: flex;
 }
+.jobs-list-item {
+  flex-basis: calc(100% / 3 - 60px);
+}
 .jobs-list-item:not(:nth-child(3n + 1)) {
   margin-left: var(--card-set-gap);
 }
@@ -240,8 +246,8 @@ address {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-list-img {
-  margin-bottom: var(--card-set-gap);
+.team-text-content {
+  padding: 30px 58px;
 }
 
 .team-list-title {
@@ -270,17 +276,16 @@ address {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.logo {
+.footer-logo {
   display: inline-block;
   margin-bottom: 20px;
+
+  color: var(--logo-main-color);
 }
 .address-list-item:not(:last-child) {
   margin-bottom: 10px;
 }
 
-.footer-logo-main {
-  color: var(--logo-main-color);
-}
 .footer-logo-secondary {
   color: var(--primary-text-color-theme-light);
 }
@@ -318,6 +323,7 @@ address {
 
 .filter-item-btn {
   padding: 4px 20px;
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -328,7 +334,8 @@ address {
   background-color: var(--secondary-background-color-theme-light);
   border-radius: 4px;
 }
-.filter-item-btn:active {
+.filter-item-btn:hover,
+.filter-item-btn:focus {
   color: var(--primary-text-color-theme-light);
   background-color: var(--accent-color);
   cursor: pointer;
@@ -346,14 +353,16 @@ address {
   flex-basis: calc(100% / 3 - var(--card-set-gap));
   margin-left: var(--card-set-gap);
   margin-bottom: var(--card-set-gap);
-  border: 1px solid var(--portfolio-card-border-color);
 }
 
 .portfolio-card-info {
   padding: 20px 24px;
+
+  border: 1px solid var(--portfolio-card-border-color);
 }
-. .samples-list-title {
+.samples-list-title {
   margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -362,6 +371,7 @@ address {
 }
 .samples-list-description {
   margin-bottom: 20px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
