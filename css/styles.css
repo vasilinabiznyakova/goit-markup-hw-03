@@ -221,7 +221,7 @@ address {
   display: flex;
 }
 .jobs-list-item {
-  flex-basis: calc(100% / 3 - 60px);
+  flex-basis: calc(100% / 3);
 }
 .jobs-list-item:not(:nth-child(3n + 1)) {
   margin-left: var(--card-set-gap);
@@ -260,7 +260,6 @@ address {
   color: var(--secondary-text-color-theme-dark);
 }
 .team-list-description {
-  margin-bottom: var(--card-set-gap);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -280,6 +279,11 @@ address {
   display: inline-block;
   margin-bottom: 20px;
 
+  font-family: var(--secondary-font-family);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
   color: var(--logo-main-color);
 }
 .address-list-item:not(:last-child) {
