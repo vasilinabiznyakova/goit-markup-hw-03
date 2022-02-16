@@ -366,6 +366,7 @@ address {
   padding: 20px 24px;
 
   border: 1px solid var(--portfolio-card-border-color);
+  border-top: none;
 }
 .samples-list-title {
   margin-bottom: 4px;
