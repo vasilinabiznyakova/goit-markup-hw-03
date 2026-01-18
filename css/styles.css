@@ -252,7 +252,17 @@ body {
 /* ============= FOOTER ============= */
 .footer {
   background-color: var(--dark-color);
+  padding: 100px 0;
 }
+
+.footer-logo {
+  display: block;
+  margin-bottom: 16px;
+}
+.footer-description {
+  max-width: 264px;
+}
+
 .footer-logo-primary {
   color: var(--brand-color);
 }
