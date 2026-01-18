@@ -89,6 +89,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--dark-color);
+  margin-bottom: 8px;
 }
 
 .card-text {
@@ -192,7 +193,10 @@ body {
 /* ============= HERO ============= */
 
 /* ============= APPROACH ============= */
-
+.approach-list {
+  display: flex;
+  column-gap: 24px;
+}
 /* ============= APPROACH ============= */
 
 /* ============= TEAM ============= */
