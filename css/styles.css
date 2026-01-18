@@ -102,7 +102,7 @@ body {
 }
 
 .centered-text {
-text-align: center;
+  text-align: center;
 }
 /* ============= COMMON STYLES ============= */
 
@@ -203,6 +203,10 @@ text-align: center;
   display: flex;
   column-gap: 24px;
 }
+
+.approach-item {
+  width: calc((100% - 3 * 24px) / 4);
+}
 /* ============= APPROACH ============= */
 
 /* ============= TEAM ============= */
@@ -220,8 +224,12 @@ text-align: center;
 .team-item {
   background-color: var(--white-color);
   border-radius: 4px;
+  width: calc((100% - 3 * 24px) / 4);
 }
 /* ============= TEAM ============= */
+
+/* ============= PORTFOLIO ============= */
+/* ============= PORTFOLIO ============= */
 
 /* ============= FOOTER ============= */
 .footer {
