@@ -129,13 +129,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* padding: 24px 0; */
 }
 
 .page-navigation {
   display: flex;
   gap: 76px;
   align-items: center;
+    padding: 24px 0;
 }
 
 .nav-items {
