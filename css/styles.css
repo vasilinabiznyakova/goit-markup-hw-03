@@ -240,6 +240,13 @@ body {
 .portfolio-item {
   width: calc((100% - 2 * 24px) / 3);
 }
+
+.portfolio-info {
+  padding-left: 16px;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
+}
 /* ============= PORTFOLIO ============= */
 
 /* ============= FOOTER ============= */
