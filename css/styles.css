@@ -81,6 +81,7 @@ body {
   text-align: center;
   text-transform: capitalize;
   color: var(--dark-color);
+  margin-bottom: 72px;
 }
 
 .card-title {
@@ -97,6 +98,11 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  margin-bottom: 32px;
+}
+
+.centered-text {
+text-align: center;
 }
 /* ============= COMMON STYLES ============= */
 
@@ -203,9 +209,17 @@ body {
 .team-section {
   background-color: var(--light-bg-color);
 }
+.team-img {
+  margin-bottom: 32px;
+}
 
+.team-list {
+  display: flex;
+  column-gap: 24px;
+}
 .team-item {
   background-color: var(--white-color);
+  border-radius: 4px;
 }
 /* ============= TEAM ============= */
 
