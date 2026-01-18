@@ -96,6 +96,22 @@ body {
 
 /* ============= HEADER ============= */
 
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0;
+}
+
+.page-navigation {
+  display: flex;
+  gap: 76px;
+}
+
+.nav-items {
+  display: flex;
+  gap: 40px;
+}
 .header-logo-secondary {
   color: var(--dark-color);
 }
@@ -121,6 +137,10 @@ body {
   letter-spacing: 0.02em;
 }
 
+.contacts-list {
+  display: flex;
+  gap: 40px;
+}
 .contacts-list-item:hover,
 .contacts-list-item:focus {
   color: var(--accent-color);
