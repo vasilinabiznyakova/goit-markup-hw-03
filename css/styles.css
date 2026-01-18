@@ -1,0 +1,192 @@
+/* ============= VARIABLES ============= */
+:root {
+  --primary-font: 'Roboto', sans-serif;
+  --primary-text-color: #434455;
+  --dark-color: #2e2f42;
+  --brand-color: #4d5ae5;
+  --accent-color: #404bbf;
+  --white-color: #ffffff;
+  --light-bg-color: #f4f4fd;
+}
+
+/* ============= /VARIABLES ============= */
+
+/* ============= COMMON STYLES   ============= */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+/* Reset default margins for headings and paragraphs */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+/* Make images block elements */
+img {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  font-family: var(--primary-font);
+  color: var(--primary-text-color);
+  background-color: var(--white-color);
+}
+
+.container {
+  max-width: 1440px;
+  padding-left: 156px;
+  padding-right: 156px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--brand-color);
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--dark-color);
+}
+
+.card-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--dark-color);
+}
+
+.card-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+/* ============= COMMON STYLES ============= */
+
+/* ============= HEADER ============= */
+
+.header-logo-secondary {
+  color: var(--dark-color);
+}
+
+.nav-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--dark-color);
+}
+
+.nav-item:hover,
+.nav-item:focus,
+.nav-item:active {
+  color: var(--accent-color);
+}
+
+.address-section {
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.contacts-list-item:hover,
+.contacts-list-item:focus {
+  color: var(--accent-color);
+}
+/* ============= HEADER ============= */
+
+/* ============= HERO ============= */
+.hero {
+  background-color: var(--dark-color);
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--white-color);
+}
+
+.hero-button {
+  background-color: var(--brand-color);
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white-color);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--accent-color);
+}
+/* ============= HERO ============= */
+
+/* ============= APPROACH ============= */
+
+/* ============= APPROACH ============= */
+
+/* ============= TEAM ============= */
+.team-section {
+  background-color: var(--light-bg-color);
+}
+
+.team-item {
+  background-color: var(--white-color);
+}
+/* ============= TEAM ============= */
+
+/* ============= FOOTER ============= */
+.footer {
+  background-color: var(--dark-color);
+}
+.footer-logo-primary {
+  color: var(--brand-color);
+}
+
+.footer-logo-secondary {
+  color: var(--light-bg-color);
+}
+
+.footer-description {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--light-bg-color);
+}
+/* ============= FOOTER ============= */
